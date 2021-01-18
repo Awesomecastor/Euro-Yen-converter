@@ -3,19 +3,28 @@
   <head>
     <title>Euro-Yen converter</title>
     <meta charset="UTF-8" />
-    <script src="Euro-Yen converter.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="Euro-Yen converter.js"></script>
   </head>
-  <body>
+  <body id="body">
     <header>
-      <h1 class="title">This is an Euro - Yen converter</h1>
+      <h1 class="title" id="intro">This is an Euro - Yen converter</h1>
     </header>
     <form>
-      <input type="number" class="input" /><select class="input">
+      <input type="number" class="input" id="amount" />
+      <select class="input" id="money">
         <option value="€">Euro (€)</option>
         <option value="¥">Japan Yen (¥)</option>
       </select>
-      <button class="input" type="submit">Convert</button>
+      <button
+        class="input"
+        type="submit"
+        id="convert"
+        onclick="displayResult(); return false;"
+      >
+        Convert
+      </button>
     </form>
+    <div id="displayResult"></div>
   </body>
 </html>

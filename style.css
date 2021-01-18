@@ -30,3 +30,19 @@ form{
     text-align: center;
     margin: 5px !important;
 }
+body{
+background-image: url("./img/tokyo.jpg");
+background-size: 100%;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    border : solid 3px red;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+}
